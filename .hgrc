@@ -1,0 +1,14 @@
+[ui]
+username = Reuben Posthuma <rposthuma@dynamiccontrols.com>
+merge = vimdiff
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args = -d $base $local $output $other +close +close
+
+[extensions]
+mq =
+
+[alias]
+mine = resolve -t internal:local
+theirs = resolve -t internal:other
